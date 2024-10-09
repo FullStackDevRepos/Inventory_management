@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react"
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export interface Product{
   productId: string;
@@ -55,4 +55,6 @@ export const api = createApi({
   })
 });
 
-export const {useGetDashboardMetricsQuery } = api;
+export const {
+  useGetDashboardMetricsQuery
+} = api;

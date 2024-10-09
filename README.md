@@ -6,6 +6,7 @@
 - Install rimraf to build the typescript project `npm install rimraf` then run the build script `rimraf dist && npx tsc`
 - Run the development server with auto updates with `npm run build && concurrently \"npx tsc -w\" \"nodemon --exec ts-node src/index.ts\"`
 - Test out the API CALLS with a curl command`curl http://localhost:8000/ROUTE_NAME`
+- Run the development server with `npm run dev`
 #### Database
 - Installation of DB dependencies `npm i prisma @prisma/client`
 - Initializing prisma `npx prisma init`

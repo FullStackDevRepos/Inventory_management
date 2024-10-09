@@ -3,7 +3,7 @@
 import React from 'react'
 import { Bell, Menu, Moon, Settings, Sun } from "lucide-react";
 import { useAppDispatch, useAppSelector } from '@/app/redux';
-import { setIsDarkMode, setIsSidebarCollapsed } from '@/app/state';
+import { setIsDarkMode, setIsSidebarCollapsed } from '@/state';
 import Link from 'next/link';
 
 

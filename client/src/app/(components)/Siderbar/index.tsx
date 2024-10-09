@@ -1,12 +1,12 @@
 "use client"
 import { useAppDispatch, useAppSelector } from '@/app/redux';
-import { setIsSidebarCollapsed } from '@/app/state';
+import { setIsSidebarCollapsed } from '@/state';
 import { Archive, CircleDollarSign, Clipboard, Layout, LucideIcon, Menu, SlidersHorizontal, User } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import React from 'react'
 
-interface SiderbarLinkProps{
+interface SiderbarLinkProps {
   href: string;
   icon: LucideIcon;
   label: string;
@@ -14,12 +14,12 @@ interface SiderbarLinkProps{
 }
 
 const SidebarLinks = ({
-  href, 
+  href,
   icon: Icon,
   label,
   isCollapsed
 }: SiderbarLinkProps) => {
-  
+
   const pathname = usePathname();
   const isActive = pathname === href || (pathname === "/" && href === "/dashboard");
 
@@ -31,7 +31,7 @@ const SidebarLinks = ({
         ${isActive ? "bg-blue-200 text-white" : ""}        
         `}>
         <Icon className='w-6 h-6 !text-gray-700' />
-        <span className={`${isCollapsed ? "hidden" : "block"} font-medium text-gray-700`}>{ label}</span>
+        <span className={`${isCollapsed ? "hidden" : "block"} font-medium text-gray-700`}>{label}</span>
       </div>
     </Link>
   )
