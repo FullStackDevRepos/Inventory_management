@@ -25,7 +25,7 @@ export interface PurchaseSummary {
 export interface ExpenseByCategorySummary{
   expenseByCategorySummaryId: string;
   category: string;
-  totalExpenses: number;
+  amount: string;
   date: string;
 }
 
