@@ -18,4 +18,4 @@
 - Run `npx prisma generate` to generate the Prisma Client: 
 - Sync your database with  the schema `npx prisma migrate dev --name init`
 - Seed your database using `npm run seed` and start querying your database.
-- Tip: Explore how you can extend the `ORM` with scalable connection pooling`, `global caching`, and `real-time database events` Read: `https://pris.ly/cli/beyond-orm`
+- Tip: Explore how you can extend the `ORM` with scalable connection pooling, `global caching`, and `real-time database events` Read: `https://pris.ly/cli/beyond-orm`
